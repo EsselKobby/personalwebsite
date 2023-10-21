@@ -322,7 +322,7 @@ form btn2{
 
 
 /*--css for small screens--*/
-nav .fa{
+nav ul .fa{
     display: none;
 }
 
