@@ -1,29 +1,26 @@
-
 var tablinks = document.getElementsByClassName("tab-links");
 var tabcontents = document.getElementsByClassName("tab-contents");
-var sidemenu = document.getElementById("sidemenu");
 
 function opentab(tabname, event) {
-  for (let tab of tablinks) {
-    tab.classList.remove("active-link");
-  }
-  for (let content of tabcontents) {
-    content.classList.remove("active-tab");
-  }
-  event.currentTarget.classList.add("active-link");
-  document.getElementById(tabname).classList.add("active-tab");
+    for (let tab of tablinks) {
+        tab.classList.remove("active-link");
+    }
+    for (let content of tabcontents) {
+        content.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
 }
 
+var sidemenu = document.getElementById("sidemenu");
+
 function openmenu() {
- 
-  sidemenu.classList.add("open");
+    sidemenu.style.right = "0";
 }
 
 function closemenu() {
-
-  sidemenu.classList.remove("open");
+    sidemenu.style.right = "-200px";
 }
-
 
 const scriptURL = 'https://script.google.com/macros/s/AKfycbyAOz_qJdKokSI7_p6eEScgIpWqgFmPEGuKdqYre8Aiv8iptA8MgOfahx9UAug2IBF7kg/exec';
 const form = document.forms['submit-to-google-sheet'];
