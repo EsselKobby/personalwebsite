@@ -322,7 +322,7 @@ form btn2{
 
 
 /*--css for small screens--*/
-.fa-solif.fa-xmark.fa-bars{
+nav ul{
     display: none;
 }
 
